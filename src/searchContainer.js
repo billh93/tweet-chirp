@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-
-import Form from './form.js';
-
+import AppBar from "material-ui/AppBar";
+import Input from "material-ui/Input";
 
 export default class SearchContainer extends Component {
   render() {
     return (
-        <Navbar>
-            <Row>
-                <Col>
-                    <h1>Tweets</h1>
-                    <Form className="form"/>
-                </Col>
-            </Row>
-        </Navbar>
+        <AppBar position="static">
+          <Input
+            placeholder="Search"
+            inputProps={{
+              "aria-label": "Description"
+            }}
+          />
+        </AppBar>
     );
   }
 }

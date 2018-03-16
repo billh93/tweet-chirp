@@ -3,22 +3,22 @@
 /* Layout
 ================================= */
 body {
-  font-family: sans-serif;
-  color: black !important; }
+  font-family: sans-serif; }
 
 .App {
   margin: 0 !important;
   padding: 0 !important; }
   .App .SearchContainer {
     float: left;
-    z-index: 2;
-    margin: 1% 0 0 -1%; }
+    margin: 1% 0 0 0%;
+    z-index: 2 !important; }
   .App .GMapContainer {
-    height: 100%;
-    position: absolute;
     float: left;
-    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     margin: 0 !important;
-    padding: 0 !important; }
+    padding: 0 !important;
+    z-index: -1 !important; }
   .App .gm-fullscreen-control {
     display: none; }
