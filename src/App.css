@@ -1,12 +1,32 @@
+/******** Global *******/
+/* Layout
+================================= */
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif; }
 
-.GMapContainer {
-  height: 100%;
-  width: 100%;
-  position: absolute; }
-
-.GMap {
-  height: 100%; }
+.App {
+  width: 100%; }
+  .App .tweetContainer {
+    float: left;
+    width: 30%;
+    z-index: 2;
+    border: 1px solid black;
+    height: 100%;
+    opacity: 0.7; }
+    @media (min-width: 20em) and (max-width: 46.24em) {
+      .App .tweetContainer {
+        width: 40%;
+        background: red; } }
+    @media (min-width: 46.25em) {
+      .App .tweetContainer {
+        background: green; } }
+  .App .GMapContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    float: left;
+    z-index: -1; }
+  .App .gm-fullscreen-control {
+    display: none; }

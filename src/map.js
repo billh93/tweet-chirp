@@ -6,7 +6,7 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 export default class GMap extends Component {
   static defaultProps = {
     center: {lat: 59.95, lng: 30.33},
-    zoom: 4
+    zoom: 4,
   };
 
   render() {
