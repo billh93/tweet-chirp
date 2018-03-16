@@ -1,51 +1,30 @@
-/******** Global *******/
-@import 'node_modules/sass-mq/mq';
-
-$mq-breakpoints: (
-    mobile:  320px,
-    tablet:  740px,
-    desktop: 980px,
-    wide:    1300px,
-
-    // ETC
-    desktopAd: 810px,
-    mobileLandscape: 480px
-);
-
-$mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+/* Global
+================================= */
+$black-text: black;
 
 /* Layout
 ================================= */
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
+  color: $black-text !important;
 }
 
 .App{
-    width:100%;
-    .tweetContainer {
-        @include mq($from: mobile, $until: tablet) {
-            width: 40%;
-            background: red;
-        }
-        @include mq($from: tablet) {
-            background: green;
-        }
+    margin: 0 !important;
+    padding: 0 !important;
+    .SearchContainer {
         float: left;
-        width: 30%;
         z-index: 2;
-        border: 1px solid black;
-        height:100%;
-        opacity: 0.7;
+        margin: 1% 0 0 -1%;
     }
     .GMapContainer{
         height: 100%;
-        width: 100%;
         position: absolute;
         float: left;
         z-index: -1;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     // Hides fullscreen button on map
     .gm-fullscreen-control {
