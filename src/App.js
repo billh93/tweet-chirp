@@ -10,15 +10,11 @@ class App extends Component {
     return (
         <Grid container s={12} className="App">
             <CssBaseline />
-            {/*<Grid container s={6}>
-                <Grid item className="SearchContainer">
-                    <SearchContainer />
-                </Grid>
-            </Grid> */}
-            <Grid container s={12} l={12}>
-                <Grid item s={12} className="GMapContainer">
-                    <GMap />
-                </Grid>
+            <Grid item l={4} className="SearchContainer">
+                <SearchContainer />
+            </Grid>
+            <Grid item l={8} className="GMapContainer">
+                <GMap />
             </Grid>
         </Grid>
     );

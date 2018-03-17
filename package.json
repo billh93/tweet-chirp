@@ -5,8 +5,6 @@
   "dependencies": {
     "ajv": "^6.2.1",
     "google-map-react": "^0.34.0",
-    "material-ui": "^1.0.0-beta.37",
-    "material-ui-icons": "^1.0.0-beta.36",
     "node-sass-chokidar": "^1.1.0",
     "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
